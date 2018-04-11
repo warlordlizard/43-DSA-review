@@ -19,7 +19,6 @@ In addition to the above, you are welcome to practice and implement the followin
 ```
 
 ## Feature Tasks
-##### Minimum Requirements
 
 ### Generic List
 * Implement a generic `List`.
