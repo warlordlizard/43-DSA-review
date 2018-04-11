@@ -2,9 +2,9 @@
 ======
 
 ## Submission Instructions
-For this assignment, you'll be working with a partner to whiteboard and implement the following data structures and associated methods. You'll be using the whiteboarding grading rubric included in this directory to evaluate the process and solution of your partner.  You **only need to do this portion once per person in your pair**, where each person implements a data structure and single method implementation of their choice while the pair evaluates the process/solution.  This should be timeboxed to 30min per person and your final submission should include a photo of your graded whiteboarding rubric.
+For this assignment, you'll be working with a partner to whiteboard and implement the following data structures and associated methods. You'll be using the whiteboarding grading rubric included in this directory to evaluate the process and solution of your partner.  You **only need to do this portion once per person in your pair**, where each person implements a data structure and an insertion method of their choice while the pair evaluates the process/solution. This should be timeboxed to 30min per person and your final submission should include a photo of your graded whiteboarding rubric.
 
-In addition to the above, you are welcome to practice and implement the following data structures and methods on the whiteboard first, then transfer to a **new** repo titled *data-structures-practice* for your final submission.  While you may work together to practice and implement the following, each person should have their own submission with a repo that is organized as follows:
+In addition to the above, you are welcome to practice and implement the following data structures and methods on the whiteboard first, then transfer to a **new** repo titled *data-structures-practice* for your final submission.  While *not required*, you may work together to practice and implement the following yet each person should have their own submission with a repo that is organized as follows:
 
 ```bash
 - data-structure-1-name
@@ -52,11 +52,12 @@ In addition to the above, you are welcome to practice and implement the followin
 * Implement `calcHeight` as a method of your `BinarySearchTree` - this should determine the height of the tree.
 * Implement `findNearest` as a method of your `BinarySearchTree` - this should return a node with a value closest to the value you pass it.
 
-### Hashmap
+### Stretch Goals
+##### Hashmap
 * Implement a `HashMap`.
 * Implement `set` as a method of your `HashMap`
 
-### Binary Search Tree - Stretch Goals
+##### Binary Search Tree
 * Implement `remove` as a method of your `BinarySearchTree` - this should shift any nodes that need to be shifted so that the tree remains in order.
 * Implement `compareBST` as a method of your `BinarySearchTree` - this should compare 2 binary search trees and determine if they are structured the same.
 
