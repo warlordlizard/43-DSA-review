@@ -59,6 +59,29 @@ class BST {
     }
     return current.val;
   }
+  findNearest(val) {
+    let diff = Math.abs(val - this.root.val)
+    let nearest = this.root;
+    _traverse(this.root)
+    function _traverse(node) {
+      if (Math.abs(val-node.val)<diff) {
+        diff = Math.abs(val-node.val);
+        nearest = node;
+      }
+      if (node.left) _traverse(node.left);
+      if (node.right) _traverse(node.right);
+    }
+    return nearest;
+  }
+  calcHeight() {
+    let height = 0
+    _traverse(this.root)
+    function _traverse(node) {
+      height++;
+      if(node.right) _traverse(node.right);
+    }
+    return height -1;
+  }
 }
 
 
