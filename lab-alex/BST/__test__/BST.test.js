@@ -18,5 +18,15 @@ describe('BST methods', () => {
       expect(this.bst.root.right.right.right.val).toEqual(7)
     })
   })
+  describe('#find', () => {
+    it('should return true if BST contains value', () => {
+      let result = this.bst.find(4);
+      expect(result).toBe(true)
+    })
+    it('should return false if BST does not contain value', () => {
+      let result = this.bst.find(10);
+      expect(result).toBe(false)
+    })
+  })
 })
 

@@ -48,7 +48,7 @@ class BST {
 
 
 
-// module.exports = {
-//   'Node': Node,
-//   'BST': BST,
-// }
+module.exports = {
+  'Node': Node,
+  'BST': BST,
+}
