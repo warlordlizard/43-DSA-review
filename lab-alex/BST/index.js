@@ -21,7 +21,7 @@ class BST {
   _insert(root, node) {
     if(node.val < root.val) {
       if(!root.left) {
-        root.right = node;
+        root.left = node;
       } else {
         this._insert(root.left, node);
       }
@@ -43,6 +43,21 @@ class BST {
     }
     if(result !== true) result=false;
     return result;
+  }
+
+  findMax() {
+    let current = this.root;
+    while(current.right !== null) {
+      current = current.right;
+    }
+    return current.val;
+  }
+  findMin() {
+    let current = this.root;
+    while(current.left !== null) {
+      current = current.left;
+    }
+    return current.val;
   }
 }
 

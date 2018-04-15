@@ -13,9 +13,8 @@ describe('BST methods', () => {
   })
   describe('#insert', () => {
     it('should add a node in correct spot', () => {
-      console.log(this.bst.root.val)
       this.bst.insert(new Node(7));
-      expect(this.bst.root.right.right.right.val).toEqual(7)
+      expect(this.bst.root.right.right.val).toEqual(7)
     })
   })
   describe('#find', () => {
@@ -26,6 +25,18 @@ describe('BST methods', () => {
     it('should return false if BST does not contain value', () => {
       let result = this.bst.find(10);
       expect(result).toBe(false)
+    })
+  })
+  describe('#findMax', () => {
+    it('should return max value in BST', () => {
+      let result = this.bst.findMax();
+      expect(result).toEqual(6);
+    })
+  })
+  describe('#findMin', () => {
+    it('should return min value in BST', () => {
+      let result = this.bst.findMin();
+      expect(result).toEqual(3);
     })
   })
 })
