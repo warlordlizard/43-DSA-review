@@ -48,14 +48,15 @@ describe('BST methods', () => {
   describe('#calcHeight', () => {
     it('should equal distance in nodes from leaf to root', () => {
       let result = this.bst.calcHeight();
-      expect(result).toEqual(1)
+      expect(result).toEqual(2)
     })
     it('should still work on taller tree', () => {
-      this.bst.insert(new Node(70));
-      this.bst.insert(new Node(80));
-      this.bst.insert(new Node(90));
+      this.bst.insert(new Node(20));
+      this.bst.insert(new Node(10));
+      this.bst.insert(new Node(5));
       let result = this.bst.calcHeight();
       expect(result).toEqual(4)
+      console.log(this.bst.root)
     })
   })
 })

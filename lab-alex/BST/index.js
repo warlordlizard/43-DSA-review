@@ -74,13 +74,26 @@ class BST {
     return nearest;
   }
   calcHeight() {
-    let height = 0
+    let heightR = 0
+    let heightL = 0
+    let height;
     _traverse(this.root)
     function _traverse(node) {
-      height++;
-      if(node.right) _traverse(node.right);
+      if (node.left) {
+        heightL++;
+        _traverse(node.left);
+      }
+      if(node.right) {
+        heightR++;
+        _traverse(node.right);
+      }
     }
-    return height -1;
+    if(heightL>heightR) {
+      height = heightL;
+    } else {
+      height = heightR;
+    }
+    return height;
   }
 }
 
